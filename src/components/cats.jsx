@@ -6,14 +6,14 @@ export default function Cat(props) {
     return (
         <div className="contact-card">
             <img src={props.image} />
-            <h3>Mr. Whiskerson</h3>
+            <h3>{props.name}</h3>
             <div className="info-group">
                 <img src={phone} />
-                <p>(212) 555-1234</p>
+                <p>{props.phone}</p>
             </div>
             <div className="info-group">
                 <img src={mail} />
-                <p>mr.whiskaz@catnap.meow</p>
+                <p>{props.email}</p>
             </div>
         </div>
     );
